@@ -20,6 +20,9 @@ window.addEventListener('scroll', () => {
     translate.forEach(element => {
         let speed = element.dataset.speed;
         element.style.transform = `translateY(${scroll * speed}px)`;
+        if (element.className == "bottom translate") {
+            element.style.transform = `translate(-50%, ${scroll * speed}px)`;
+        }
     });
 
     opacity.forEach(element => {
