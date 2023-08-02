@@ -8,6 +8,11 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 .container{
